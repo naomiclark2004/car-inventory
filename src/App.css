@@ -1,5 +1,5 @@
 .wrapper {
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 h1 {
@@ -31,10 +31,34 @@ h1 {
     padding: 2px 16px;
     box-shadow: inset 0px 3px 3px rgb(228 228 228);
 }
-p{
+
+p {
     text-align: center;
 }
+
 img {
     max-width: 400px;
     height: 400px;
+}
+
+@media only screen and (max-width:426px) and (min-width:330px){
+    .card{
+        max-width: 350px;
+    }
+
+    img {
+        max-width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .card{
+        max-width: 300px;
+    }
+
+    img {
+        max-width: 300px;
+        height: 300px;
+    }
 }
